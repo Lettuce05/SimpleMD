@@ -1,6 +1,6 @@
-import { createElement } from './util';
+import { createElement, downloadToFile } from './util';
 
-export function createSaveModal(){
+export function createSaveModal() {
   // create modal (backdrop)
   let modal = createElement("div", {
     classes: ["modal"],
@@ -8,7 +8,7 @@ export function createSaveModal(){
   });
 
   // create modalContent
-  let modalContent = createElement("div", {classes: ["modal-content"]});
+  let modalContent = createElement("div", { classes: ["modal-content"] });
   let closeBtn = createElement("span", {
     id: "closeBtn",
     classes: ["close"]
@@ -19,6 +19,12 @@ export function createSaveModal(){
   // create export markdown button
   let exportMDBtn = createElement("button");
   exportMDBtn.innerText = "Export as Markdown";
+  exportMDBtn.onclick = function() {
+    let filenameInput = document.getElementById("filename");
+    if (filenameInput && filenameInput.value.trim() && localStorage.getItem("currDoc")) {
+      downloadToFile(localStorage.getItem("currDoc"), filenameInput.value.trim() + ".md", "text/plain");
+    }
+  }
   modalContent.appendChild(exportMDBtn);
 
   // create export pdf button

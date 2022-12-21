@@ -45,7 +45,10 @@ header {
 }
 
 #saveBtn {
-  padding: 5px 10px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: gray;
+  cursor: pointer;
 }
 
 main {
@@ -65,6 +68,55 @@ main {
   overflow-y: auto;
 }
 
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 300px;
+  background-color: #e3e3e3;
+  border-radius: 1rem;
+}
+
+.modal-content button {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 1rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -80,6 +132,8 @@ main {
   header { display: none; }
   #editor { display: none; }
   #previewContainer {font-size:12pt; max-width:100%; width: 100%; }
+  #saveModal { display: none; }
+  .modal-content { display: none; }
 }
 
 

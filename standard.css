@@ -88,9 +88,8 @@ width: 100%;
 }
 
 @media print {
-  * { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important; overflow: visible !important;}
+  * { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important;}
   body{font-size:12pt; max-width:100%;}
-  #previewContainer{font-size:12pt; max-width:100%; width: 100%}
   a, a:visited { text-decoration: underline; }
   hr { height: 1px; border:0; border-bottom:1px solid black; }
   a[href]:after { content: " (" attr(href) ")"; }

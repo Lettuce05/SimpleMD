@@ -19,8 +19,12 @@ app.appendChild(header);
 const main = createElement("main");
 const editor = createElement("div", { id: "editor" });
 const previewContainer = createElement("div", { id: "previewContainer" });
-const preview = createElement("div", {id: "preview"});
+const preview = createElement("div", { id: "preview" });
 preview.classList.add(previewTheme);
+if (localStorage.getItem("currDoc")) {
+  let previewHtml = converter.makeHtml(localStorage.getItem("currDoc"));
+  preview.innerHTML = previewHtml;
+}
 previewContainer.appendChild(preview);
 
 function handleChange(e) {
@@ -28,14 +32,21 @@ function handleChange(e) {
   let html = converter.makeHtml(text);
   console.log(html);
   preview.innerHTML = html;
+  localStorage.setItem("currDoc", text);
 }
 
 main.appendChild(editor);
 main.appendChild(previewContainer);
 app.appendChild(main);
 
+const filenameInput = document.getElementById("filename");
+filenameInput.value = localStorage.getItem("currFileName") || "UntitledDocument";
+filenameInput.addEventListener("change", (e) => {
+  localStorage.setItem("currFileName", e.target.value);
+})
+
 let view = new EditorView({
-  doc: "",
+  doc: localStorage.getItem("currDoc") || "",
   extensions: [
     basicSetup,
     markdown({ codeLanguages: languages }),

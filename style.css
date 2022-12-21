@@ -76,13 +76,10 @@ main {
 } */
 
 @media print {
-  header {
-    display: none;
-  }
-
-  #editor {
-    display: none;
-  }
+  * { overflow: visible !important; }
+  header { display: none; }
+  #editor { display: none; }
+  #previewContainer {font-size:12pt; max-width:100%; width: 100%; }
 }
 
 

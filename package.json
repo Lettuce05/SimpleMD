@@ -1,0 +1,21 @@
+{
+  "name": "simple-md",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "@codemirror/lang-markdown": "^6.0.5",
+    "@codemirror/language-data": "^6.1.0",
+    "@codemirror/theme-one-dark": "^6.1.0",
+    "codemirror": "^6.0.1",
+    "showdown": "^2.1.0"
+  }
+}

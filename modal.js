@@ -14,6 +14,10 @@ export function createSaveModal() {
     classes: ["close"]
   });
   closeBtn.innerHTML = "&times;";
+  // close modal
+  closeBtn.onclick = function(){
+    modal.style.display = "none";
+  }
   modalContent.appendChild(closeBtn);
 
   // create export markdown button
@@ -37,6 +41,13 @@ export function createSaveModal() {
 
   // insert modal-content into modal
   modal.appendChild(modalContent);
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  } 
 
   return modal;
 }

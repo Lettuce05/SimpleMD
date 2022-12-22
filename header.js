@@ -1,4 +1,5 @@
 import { createElement } from './util';
+import { createSelect } from './select';
 
 export function createHeader() {
   const header = createElement("header");
@@ -23,6 +24,8 @@ export function createHeader() {
 
   // create right side of header
   const rightDiv = createElement("div", { classes: ["header-right"] });
+  const select = createSelect();
+  rightDiv.appendChild(select);
   const splitBtn = createElement("button", { id: "splitBtn", classes: ["header-btn"] });
   splitBtn.innerText = "Split";
   splitBtn.onclick = function() {

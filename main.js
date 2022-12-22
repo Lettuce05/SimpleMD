@@ -1,5 +1,4 @@
-import './style.css'
-import './standard.css';
+import './style.css';
 import { basicSetup, EditorView } from "codemirror";
 import { markdown } from "@codemirror/lang-markdown";
 import { languages } from "@codemirror/language-data";
@@ -51,8 +50,7 @@ app.appendChild(main);
 let saveModal = createSaveModal();
 app.appendChild(saveModal);
 
-
-
+// create and configure editor instance
 let view = new EditorView({
   doc: localStorage.getItem("currDoc") || "",
   extensions: [

@@ -1,4 +1,7 @@
 /* html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; } */
+#previewContainer {
+  background:#fefefe;
+}
 
 .standard{
 color:#444;
@@ -36,12 +39,12 @@ color:#111;
 line-height:1em;
 }
 .standard h4, .standard h5,.standard h6{ font-weight: bold; }
-.standard h1{ font-size:2.5em; }
-.standard h2{ font-size:2em; }
-.standard h3{ font-size:1.5em; }
-.standard h4{ font-size:1.2em; }
-.standard h5{ font-size:1em; }
-.standard h6{ font-size:0.9em; }
+.standard h1{ font-size:2.5em; margin-top: 0.67em; margin-bottom: 0.67em; }
+.standard h2{ font-size:2em; margin-top: 0.83em; margin-bottom: 0.83em; }
+.standard h3{ font-size:1.5em; margin-top: 1em; margin-bottom: 1em; }
+.standard h4{ font-size:1.2em; margin-top: 1.33em; margin-bottom: 1.33em; }
+.standard h5{ font-size:1em; margin-top: 1.67em; margin-bottom: 1.67em; }
+.standard h6{ font-size:0.9em; margin-top: 2.33em; margin-bottom: 2.33em; }
 
 .standard blockquote{
 color:#666666;

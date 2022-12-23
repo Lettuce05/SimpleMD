@@ -1,169 +1,170 @@
-#previewContainer {
+/* #previewContainer {
   background-color:#000 !important;
   background:#000 !important;
-}
-.standard1 {
+} */
+.standard-dark {
     background: #000;
     font-family: Georgia, Palatino, serif;
     color: #EEE;
     line-height: 1;
     padding: 30px;
-    margin:auto;
+/*     margin:auto; */
 /*     max-width:42em; */
 }
-.standard1 h1, .standard1 h2, .standard1 h3, .standard1 h4 {
+.standard-dark h1, .standard-dark h2, .standard-dark h3, .standard-dark h4 {
     font-weight: 400;
 }
-.standard1 h1, .standard1 h2, .standard1 h3, .standard1 h4, .standard1 h5, .standard1 p {
+.standard-dark h1, .standard-dark h2, .standard-dark h3, .standard-dark h4, .standard-dark h5, .standard-dark p {
     margin-bottom: 24px;
     padding: 0;
 }
-.standard1 h1 {
+.standard-dark h1 {
     font-size: 48px;
 }
-.standard1 h2 {
+.standard-dark h2 {
     font-size: 36px;
     margin: 24px 0 6px;
 }
-.standard1 h3 {
+.standard-dark h3 {
     font-size: 24px;
 }
-.standard1 h4 {
+.standard-dark h4 {
     font-size: 21px;
 }
-.standard1 h5 {
+.standard-dark h5 {
     font-size: 18px;
 }
-.standard1 a {
+.standard-dark a {
     color: #61BFC1;
     margin: 0;
     padding: 0;
     text-decoration: none;
     vertical-align: baseline;
 }
-.standard1 a:hover {
+.standard-dark a:hover {
     text-decoration: underline;
 }
-.standard1 a:visited {
+.standard-dark a:visited {
     color: #466B6C;
 }
-.standard1 ul, .standard1 ol {
+.standard-dark ul, .standard-dark ol {
     padding: 0;
     margin: 0;
+    padding-left: 30px;
 }
-.standard1 li {
+.standard-dark li {
     line-height: 24px;
 }
-.standard1 li ul, .standard1 li ul {
+.standard-dark li ul, .standard-dark li ul {
     margin-left: 24px;
 }
-.standard1 p, .standard1 ul, .standard1 ol {
+.standard-dark p, .standard-dark ul, .standard-dark ol {
     font-size: 16px;
     line-height: 24px;
-    max-width: 540px;
+/*     max-width: 540px; */
 }
-.standard1 pre {
+.standard-dark pre {
     padding: 0px 24px;
-    max-width: 800px;
+/*     max-width: 800px; */
     white-space: pre-wrap;
 }
-.standard1 code {
+.standard-dark code {
     font-family: Consolas, Monaco, Andale Mono, monospace;
     line-height: 1.5;
     font-size: 13px;
 }
-.standard1 aside {
+.standard-dark aside {
     display: block;
     float: right;
-    width: 390px;
+/*     width: 390px; */
 }
-.standard1 blockquote {
+.standard-dark blockquote {
     border-left:.5em solid #eee;
     padding: 0 2em;
     margin-left:0;
-    max-width: 476px;
+/*     max-width: 476px; */
 }
-.standard1 blockquote cite {
+.standard-dark blockquote cite {
     font-size:14px;
     line-height:20px;
     color:#bfbfbf;
 }
-.standard1 blockquote cite:before {
+.standard-dark blockquote cite:before {
     content: '\2014 \00A0';
 }
 
-.standard1 blockquote p {  
+.standard-dark blockquote p {  
     color: #666;
-    max-width: 460px;
+/*     max-width: 460px; */
 }
-.standard1 hr {
-    width: 540px;
+.standard-dark hr {
+/*     width: 540px; */
     text-align: left;
     margin: 0 auto 0 0;
     color: #999;
 }
 
-.standard1 button,
-.standard1 input,
-.standard1 select,
-.standard1 textarea {
+.standard-dark button,
+.standard-dark input,
+.standard-dark select,
+.standard-dark textarea {
   font-size: 100%;
   margin: 0;
   vertical-align: baseline;
   *vertical-align: middle;
 }
-.standard1 button, .standard1 input {
+.standard-dark button, .standard-dark input {
   line-height: normal;
   *overflow: visible;
 }
-.standard1 button::-moz-focus-inner, .standard1 input::-moz-focus-inner {
+.standard-dark button::-moz-focus-inner, .standard-dark input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-.standard1 button,
-.standard1 input[type="button"],
-.standard1 input[type="reset"],
-.standard1 input[type="submit"] {
+.standard-dark button,
+.standard-dark input[type="button"],
+.standard-dark input[type="reset"],
+.standard-dark input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button;
 }
-.standard1 input[type=checkbox], .standard1 input[type=radio] {
+.standard-dark input[type=checkbox], .standard-dark input[type=radio] {
   cursor: pointer;
 }
 /* override default chrome & firefox settings */
-.standard1 input:not([type="image"]), textarea {
+.standard-dark input:not([type="image"]), textarea {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
-.standard1 input[type="search"] {
+.standard-dark input[type="search"] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
-.standard1 input[type="search"]::-webkit-search-decoration {
+.standard-dark input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-.standard1 label,
-.standard1 input,
-.standard1 select,
-.standard1 textarea {
+.standard-dark label,
+.standard-dark input,
+.standard-dark select,
+.standard-dark textarea {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: normal;
   margin-bottom: 18px;
 }
-.standard1 input[type=checkbox], input[type=radio] {
+.standard-dark input[type=checkbox], input[type=radio] {
   cursor: pointer;
   margin-bottom: 0;
 }
-.standard1 input[type=text],
-.standard1 input[type=password],
-.standard1 textarea,
-.standard1 select {
+.standard-dark input[type=text],
+.standard-dark input[type=password],
+.standard-dark textarea,
+.standard-dark select {
   display: inline-block;
   width: 210px;
   padding: 4px;
@@ -177,26 +178,26 @@
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-.standard1 select, .standard1 input[type=file] {
+.standard-dark select, .standard-dark input[type=file] {
   height: 27px;
   line-height: 27px;
 }
-.standard1 textarea {
+.standard-dark textarea {
   height: auto;
 }
 
 /* grey out placeholders */
-.standard1 :-moz-placeholder {
+.standard-dark :-moz-placeholder {
   color: #bfbfbf;
 }
-.standard1 ::-webkit-input-placeholder {
+.standard-dark ::-webkit-input-placeholder {
   color: #bfbfbf;
 }
 
-.standard1 input[type=text],
-.standard1 input[type=password],
-.standard1 select,
-.standard1 textarea {
+.standard-dark input[type=text],
+.standard-dark input[type=password],
+.standard-dark select,
+.standard-dark textarea {
   -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
   -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
   transition: border linear 0.2s, box-shadow linear 0.2s;
@@ -204,7 +205,7 @@
   -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
-.standard1 input[type=text]:focus, .standard1 input[type=password]:focus, .standard1 textarea:focus {
+.standard-dark input[type=text]:focus, .standard-dark input[type=password]:focus, .standard-dark textarea:focus {
   outline: none;
   border-color: rgba(82, 168, 236, 0.8);
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
@@ -213,7 +214,7 @@
 }
 
 /* buttons */
-.standard1 button {
+.standard-dark button {
   display: inline-block;
   padding: 4px 14px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -244,25 +245,18 @@
   border-color: #0064cd #0064cd #003f81;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
-.standard1 button:hover {
+.standard-dark button:hover {
   color: #fff;
   background-position: 0 -15px;
   text-decoration: none;
 }
-.standard1 button:active {
+.standard-dark button:active {
   -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
-.standard1 button::-moz-focus-inner {
+.standard-dark button::-moz-focus-inner {
   padding: 0;
   border: 0;
-}
-
-@media print {
-  :root, html, body, #app, #main {
-    background-color:#000 !important;
-    background:#000 !important;
-  }
 }
 

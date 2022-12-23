@@ -171,14 +171,6 @@ main {
   overflow-y: auto;
 }
 
-@media print {
-  * { overflow: visible !important; }
-  header { display: none; }
-  #editor { display: none; }
-  #previewContainer {font-size:12pt; max-width:100%; width: 100%; }
-  #saveModal { display: none; }
-  .modal-content { display: none; }
-}
 
 @media (max-width: 600px){
   header {
@@ -192,6 +184,44 @@ main {
   .header-left {
     display: none;
   }
+}
+
+@media print {
+/*   * { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important;} */
+  * { overflow: visible !important; }
+  header { display: none !important; }
+  #editor { display: none !important; }
+  #previewContainer {font-size:12pt !important; max-width:100% !important; width: 100% !important; display: block !important; }
+  #saveModal { display: none !important; }
+  .modal-content { display: none !important; }
+  :root, html, body, #app, #main {
+    background-color: transparent !important;
+    background: transparent !important;
+  }
+  body{font-size:12pt; max-width:100%;}
+  a, a:visited { text-decoration: underline; }
+  hr { height: 1px; border:0; border-bottom:1px solid black; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; padding-right: 1em; page-break-inside: avoid; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page :left { margin: 15mm 20mm 15mm 10mm; }
+  @page :right { margin: 15mm 10mm 15mm 20mm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+
+  is(:root, html, body, #app, #main):has(.standard-dark) {
+    background-color: #000 !important;
+    background: #000 !important;
+  }
+
+  .dark {
+    background-color: #000 !important;
+    background: #000 !important;
+  }
+  
 }
 
 

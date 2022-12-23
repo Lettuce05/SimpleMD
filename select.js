@@ -3,7 +3,7 @@ import { createElement } from './util';
 const themes = [
   "standard",
   "standard-alt",
-  "standard1",
+  "standard-dark",
 ];
 
 export function createSelect() {
@@ -23,13 +23,16 @@ export function createSelect() {
       select.innerText = themes[i];
       // hide select-items
       selectItems.classList.toggle("select-hide");
-      // update css file
-      let themeLink = document.getElementById('themeLink');
-      themeLink.href = themes[i] + ".css";
       // update preview theme class
       let preview = document.getElementById("preview");
       preview.className = "";
       preview.classList.add(themes[i]);
+
+      if (themes[i].includes("dark")){
+        document.body.classList.add("dark");
+      } else {
+        document.body.classList.remove("dark");
+      }
     }
     selectItems.appendChild(selectItem);
   }

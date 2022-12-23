@@ -160,10 +160,3 @@ width: 100%;
 	border-top: 1px solid #ccc;
 	padding:5px;
 }
-
-@media print {
-  :root, html, body, #app, #main {
-    background-color:#fefefe !important;
-    background:#fefefe !important;
-  }
-}

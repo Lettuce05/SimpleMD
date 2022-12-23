@@ -1,4 +1,7 @@
 import './style.css';
+import './standard.css';
+import './standard-dark.css';
+import './standard-alt.css';
 import { basicSetup, EditorView } from "codemirror";
 import { markdown } from "@codemirror/lang-markdown";
 import { languages } from "@codemirror/language-data";

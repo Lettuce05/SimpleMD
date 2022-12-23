@@ -1,7 +1,7 @@
-/* #previewContainer {
+.dark #previewContainer {
   background-color:#000 !important;
   background:#000 !important;
-} */
+}
 .standard-dark {
     background: #000;
     font-family: Georgia, Palatino, serif;

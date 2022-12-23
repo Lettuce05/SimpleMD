@@ -5,13 +5,16 @@ import './standard-alt.css';
 import { basicSetup, EditorView } from "codemirror";
 import { markdown } from "@codemirror/lang-markdown";
 import { languages } from "@codemirror/language-data";
+import { autocompletion } from '@codemirror/autocomplete';
 import { oneDark } from '@codemirror/theme-one-dark';
 import showdown from 'showdown';
 import { createHeader } from "./header";
 import { createElement } from './util';
 import { createSaveModal } from "./modal";
+import { mdCompletions } from "./completion";
 
 let converter = new showdown.Converter();
+converter.setFlavor("github");
 
 // get reference to app
 const app = document.getElementById("app");
@@ -60,7 +63,8 @@ let view = new EditorView({
     basicSetup,
     markdown({ codeLanguages: languages }),
     oneDark,
-    EditorView.updateListener.of(handleChange)
+    EditorView.updateListener.of(handleChange),
+    autocompletion({ override: [mdCompletions] }),
   ],
-  parent: editor
+  parent: editor,
 })

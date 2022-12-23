@@ -28,6 +28,7 @@ export function createSelect() {
       preview.className = "";
       preview.classList.add(themes[i]);
 
+      // give body class dark if it is a dark theme (make background match for printing)
       if (themes[i].includes("dark")){
         document.body.classList.add("dark");
       } else {
